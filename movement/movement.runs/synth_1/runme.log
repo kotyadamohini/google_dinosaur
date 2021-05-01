@@ -1,0 +1,586 @@
+
+*** Running vivado
+    with args -log movement.vds -m64 -mode batch -messageDb vivado.pb -notrace -source movement.tcl
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source movement.tcl -notrace
+Command: synth_design -top movement -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3268 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 306.227 ; gain = 99.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'movement' [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/VLSI/Desktop/movement/movement.runs/synth_1/.Xil/Vivado-1668-DESKTOP-FAGG66O/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/VLSI/Desktop/movement/movement.runs/synth_1/.Xil/Vivado-1668-DESKTOP-FAGG66O/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-151] case item 5'b11101 is unreachable [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:242]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:636]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:648]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:660]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:672]
+WARNING: [Synth 8-567] referenced signal 'seg' should be on the sensitivity list [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:634]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:717]
+WARNING: [Synth 8-324] index 111 out of range [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:735]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:729]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:741]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:753]
+INFO: [Synth 8-638] synthesizing module 'kbInput' [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/kbInput.v:23]
+INFO: [Synth 8-256] done synthesizing module 'kbInput' (2#1) [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/kbInput.v:23]
+INFO: [Synth 8-638] synthesizing module 'vga_controller' [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/vga_controller.v:24]
+	Parameter HMAX bound to: 800 - type: integer 
+	Parameter VMAX bound to: 525 - type: integer 
+	Parameter HLINES bound to: 640 - type: integer 
+	Parameter VLINES bound to: 480 - type: integer 
+	Parameter HSP bound to: 744 - type: integer 
+	Parameter HFP bound to: 648 - type: integer 
+	Parameter VFP bound to: 482 - type: integer 
+	Parameter VSP bound to: 484 - type: integer 
+	Parameter SPP bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_controller' (3#1) [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/vga_controller.v:24]
+INFO: [Synth 8-4471] merging register 'G_reg[3:0]' into 'R_reg[3:0]' [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:833]
+INFO: [Synth 8-4471] merging register 'B_reg[3:0]' into 'R_reg[3:0]' [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:834]
+INFO: [Synth 8-256] done synthesizing module 'movement' (4#1) [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 347.098 ; gain = 140.047
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 347.098 ; gain = 140.047
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'instance_name' [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:45]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/VLSI/Desktop/movement/movement.runs/synth_1/.Xil/Vivado-1668-DESKTOP-FAGG66O/dcp/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Finished Parsing XDC File [C:/Users/VLSI/Desktop/movement/movement.runs/synth_1/.Xil/Vivado-1668-DESKTOP-FAGG66O/dcp/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Parsing XDC File [C:/Users/VLSI/Desktop/movement/movement.srcs/constrs_1/new/move.xdc]
+Finished Parsing XDC File [C:/Users/VLSI/Desktop/movement/movement.srcs/constrs_1/new/move.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/VLSI/Desktop/movement/movement.srcs/constrs_1/new/move.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/movement_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/movement_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 660.012 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:58 . Memory (MB): peak = 660.012 ; gain = 452.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:58 . Memory (MB): peak = 660.012 ; gain = 452.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:58 . Memory (MB): peak = 660.012 ; gain = 452.961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vcounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bALL_up" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bALL_down" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bALL_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bcd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rom_data3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "cx1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cx1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cx2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cx2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "x" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "x1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "x1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "x2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "x2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bALL_up" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bALL_down" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bALL_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bcd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rom_data3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "cx1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cx1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cx2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cx2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bcd" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "se" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "str" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rom_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "rom_data1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rom_data2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rom_data4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rom_data5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rom_data6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rom_data7" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'str_reg' [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:718]
+WARNING: [Synth 8-327] inferring latch for variable 'se_reg' [C:/Users/VLSI/Desktop/movement/movement.srcs/sources_1/new/movement.v:637]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:59 . Memory (MB): peak = 660.012 ; gain = 452.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 13    
+	   2 Input     11 Bit       Adders := 9     
+	   2 Input      6 Bit       Adders := 4     
+	   3 Input      6 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 8     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 17    
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	  64 Input     64 Bit        Muxes := 1     
+	  64 Input     63 Bit        Muxes := 1     
+	  11 Input     40 Bit        Muxes := 8     
+	  64 Input     33 Bit        Muxes := 1     
+	  32 Input     32 Bit        Muxes := 1     
+	  32 Input     29 Bit        Muxes := 2     
+	  32 Input     28 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   4 Input     21 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	  16 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   3 Input     11 Bit        Muxes := 2     
+	   4 Input     11 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 14    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module movement 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 13    
+	   2 Input     11 Bit       Adders := 7     
+	   2 Input      6 Bit       Adders := 4     
+	   3 Input      6 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 8     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 14    
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  64 Input     64 Bit        Muxes := 1     
+	  64 Input     63 Bit        Muxes := 1     
+	  11 Input     40 Bit        Muxes := 8     
+	  64 Input     33 Bit        Muxes := 1     
+	  32 Input     32 Bit        Muxes := 1     
+	  32 Input     29 Bit        Muxes := 2     
+	  32 Input     28 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   4 Input     21 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	  16 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   3 Input     11 Bit        Muxes := 2     
+	   4 Input     11 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 1     
+Module kbInput 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module vga_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:59 . Memory (MB): peak = 660.012 ; gain = 452.961
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vcounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rom_data3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bcd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "cx1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bALL_left" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bALL_down" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bALL_up" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:01:00 . Memory (MB): peak = 660.012 ; gain = 452.961
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:01:00 . Memory (MB): peak = 660.012 ; gain = 452.961
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'bALL_up_reg[0]' (FDR) to 'bALL_up_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bALL_up_reg[1]' (FDR) to 'bALL_up_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bALL_left_reg[0]' (FDRE) to 'bALL_right_reg[0]'
+INFO: [Synth 8-3886] merging instance 'bALL_down_reg[0]' (FDR) to 'bALL_up_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bALL_down_reg[1]' (FDR) to 'bALL_up_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bALL_right_reg[0]' (FDRE) to 'bALL_right_reg[5]'
+INFO: [Synth 8-3886] merging instance 'bALL_right_reg[1]' (FDSE) to 'bALL_right_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rom_addr_reg[2]' (FD) to 'rom_addr2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rom_addr_reg[0]' (FD) to 'rom_addr4_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rom_addr_reg[1]' (FD) to 'rom_addr2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rom_addr4_reg[0]' (FD) to 'rom_addr2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rom_addr2_reg[2]' (FD) to 'rom_addr1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rom_addr2_reg[1]' (FD) to 'rom_addr1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rom_addr2_reg[0]' (FD) to 'rom_addr1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rom_addr1_reg[0]' (FD) to 'rom_addr5_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rom_addr1_reg[2]' (FD) to 'rom_addr6_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rom_addr1_reg[1]' (FD) to 'rom_addr5_reg[1]'
+INFO: [Synth 8-3886] merging instance 'bALL_up_reg[2]' (FDR) to 'bALL_up_reg[5]'
+INFO: [Synth 8-3886] merging instance 'bALL_up_reg[3]' (FDR) to 'bALL_up_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bALL_up_reg[4]' (FDR) to 'bALL_up_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bALL_up_reg[5]' (FDR) to 'bALL_up_reg[6]'
+INFO: [Synth 8-3886] merging instance 'bALL_up_reg[7]' (FDR) to 'bALL_up_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bALL_up_reg[8]' (FDS) to 'bALL_down_reg[8]'
+INFO: [Synth 8-3886] merging instance 'bALL_up_reg[9]' (FDR) to 'bALL_up_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bALL_up_reg[10]' (FDR) to 'bALL_down_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bALL_left_reg[6]' (FDRE) to 'bALL_right_reg[5]'
+INFO: [Synth 8-3886] merging instance 'bALL_left_reg[7]' (FDRE) to 'bALL_right_reg[5]'
+INFO: [Synth 8-3886] merging instance 'bALL_left_reg[8]' (FDRE) to 'bALL_right_reg[5]'
+INFO: [Synth 8-3886] merging instance 'bALL_left_reg[9]' (FDRE) to 'bALL_right_reg[5]'
+INFO: [Synth 8-3886] merging instance 'bALL_left_reg[10]' (FDRE) to 'bALL_right_reg[5]'
+INFO: [Synth 8-3886] merging instance 'bALL_left_reg[4]' (FDSE) to 'bALL_right_reg[2]'
+INFO: [Synth 8-3886] merging instance 'bALL_left_reg[5]' (FDRE) to 'bALL_right_reg[5]'
+INFO: [Synth 8-3886] merging instance 'bALL_left_reg[1]' (FDSE) to 'bALL_right_reg[2]'
+INFO: [Synth 8-3886] merging instance 'bALL_left_reg[2]' (FDSE) to 'bALL_right_reg[2]'
+INFO: [Synth 8-3886] merging instance 'bALL_left_reg[3]' (FDSE) to 'bALL_right_reg[2]'
+INFO: [Synth 8-3886] merging instance 'bALL_right_reg[2]' (FDSE) to 'bALL_right_reg[3]'
+INFO: [Synth 8-3886] merging instance 'bALL_right_reg[3]' (FDSE) to 'bALL_right_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bALL_right_reg[4]' (FDSE) to 'bALL_right_reg[6]'
+INFO: [Synth 8-3886] merging instance 'bALL_right_reg[5]' (FDRE) to 'bALL_right_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bALL_right_reg[6] )
+INFO: [Synth 8-3886] merging instance 'bALL_right_reg[7]' (FDRE) to 'bALL_right_reg[8]'
+INFO: [Synth 8-3886] merging instance 'bALL_right_reg[8]' (FDRE) to 'bALL_right_reg[9]'
+INFO: [Synth 8-3886] merging instance 'bALL_right_reg[9]' (FDRE) to 'bALL_right_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bALL_right_reg[10] )
+INFO: [Synth 8-3886] merging instance 'bALL_down_reg[2]' (FDR) to 'bALL_down_reg[5]'
+INFO: [Synth 8-3886] merging instance 'bALL_down_reg[3]' (FDR) to 'bALL_down_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bALL_down_reg[4]' (FDR) to 'bALL_down_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bALL_down_reg[5]' (FDR) to 'bALL_down_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bALL_down_reg[8] )
+INFO: [Synth 8-3886] merging instance 'bALL_down_reg[9]' (FDR) to 'bALL_down_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bALL_down_reg[10] )
+INFO: [Synth 8-3886] merging instance 'rom_addr5_reg[0]' (FD) to 'rom_addr7_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rom_addr5_reg[2]' (FD) to 'rom_addr7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rom_addr5_reg[1]' (FD) to 'rom_addr7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rom_addr7_reg[0]' (FD) to 'rom_addr6_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rom_addr7_reg[1]' (FD) to 'rom_addr6_reg[1]'
+WARNING: [Synth 8-3332] Sequential element (bALL_right_reg[1]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_down_reg[5]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_down_reg[2]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_up_reg[5]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_up_reg[2]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_up_reg[1]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_up_reg[0]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_right_reg[0]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_left_reg[0]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_up_reg[10]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_down_reg[0]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_down_reg[1]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_right_reg[5]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr2_reg[2]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr_reg[2]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr4_reg[0]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr_reg[0]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr2_reg[1]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr_reg[1]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr2_reg[0]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr1_reg[2]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr1_reg[1]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr1_reg[0]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr5_reg[0]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr5_reg[1]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_up_reg[3]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_up_reg[4]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_up_reg[7]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_down_reg[8]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_up_reg[8]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_up_reg[9]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_down_reg[10]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_left_reg[6]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_left_reg[7]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_left_reg[8]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_left_reg[9]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_left_reg[10]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_right_reg[2]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_left_reg[4]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_left_reg[5]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_left_reg[1]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_left_reg[2]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_left_reg[3]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_right_reg[3]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_right_reg[4]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_right_reg[6]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_right_reg[7]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_right_reg[8]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_right_reg[9]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_right_reg[10]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_down_reg[3]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_down_reg[4]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (bALL_down_reg[9]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr7_reg[0]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr5_reg[2]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr7_reg[1]) is unused and will be removed from module movement.
+INFO: [Synth 8-3886] merging instance 'rom_addr_reg[3]' (FD) to 'rom_addr2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rom_addr2_reg[3]' (FD) to 'rom_addr1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rom_addr2_reg[4]' (FD) to 'rom_addr1_reg[4]'
+WARNING: [Synth 8-3332] Sequential element (rom_addr_reg[3]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr2_reg[3]) is unused and will be removed from module movement.
+WARNING: [Synth 8-3332] Sequential element (rom_addr2_reg[4]) is unused and will be removed from module movement.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:01:09 . Memory (MB): peak = 660.012 ; gain = 452.961
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:01:09 . Memory (MB): peak = 660.012 ; gain = 452.961
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_out1' to pin 'instance_name/bbstub_clk_out1/O'
+INFO: [Synth 8-5820] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:01:17 . Memory (MB): peak = 660.012 ; gain = 452.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:01:17 . Memory (MB): peak = 660.012 ; gain = 452.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'bALL_up_reg[6]' (FDR) to 'bALL_down_reg[7]'
+WARNING: [Synth 8-3332] Sequential element (bALL_up_reg[6]) is unused and will be removed from module movement.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:01:18 . Memory (MB): peak = 692.414 ; gain = 485.363
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:01:18 . Memory (MB): peak = 692.414 ; gain = 485.363
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:01:18 . Memory (MB): peak = 692.414 ; gain = 485.363
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 692.414 ; gain = 485.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 692.414 ; gain = 485.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 692.414 ; gain = 485.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 692.414 ; gain = 485.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 692.414 ; gain = 485.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 692.414 ; gain = 485.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |BUFG      |     3|
+|3     |CARRY4    |    81|
+|4     |LUT1      |    99|
+|5     |LUT2      |   212|
+|6     |LUT3      |   103|
+|7     |LUT4      |   272|
+|8     |LUT5      |   163|
+|9     |LUT6      |   333|
+|10    |MUXF7     |    16|
+|11    |MUXF8     |     1|
+|12    |FDRE      |   176|
+|13    |FDSE      |    16|
+|14    |LD        |    80|
+|15    |IBUF      |     3|
+|16    |OBUF      |    14|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |  1573|
+|2     |  u1     |vga_controller |   772|
+|3     |  u2     |kbInput        |    38|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 692.414 ; gain = 485.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 692.414 ; gain = 142.969
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:01:19 . Memory (MB): peak = 692.414 ; gain = 485.363
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 164 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  LD => LDCE: 80 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:01:15 . Memory (MB): peak = 692.414 ; gain = 459.957
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 692.414 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 15 18:08:52 2020...

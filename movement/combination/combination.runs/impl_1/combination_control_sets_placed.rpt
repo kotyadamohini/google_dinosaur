@@ -1,0 +1,103 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
+| Date         : Fri Feb 14 19:23:05 2020
+| Host         : DESKTOP-EDM7MTR running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file combination_control_sets_placed.rpt
+| Design       : combination
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    50 |
+| Unused register locations in slices containing registers |   293 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             117 |           55 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              16 |            9 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              22 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+--------------------------------------+--------------------------------------+------------------+----------------+
+|         Clock Signal         |             Enable Signal            |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++------------------------------+--------------------------------------+--------------------------------------+------------------+----------------+
+|  instance_name/inst/clk_out1 |                                      | nolabel_line335/VS0                  |                1 |              1 |
+|  instance_name/inst/clk_out1 |                                      | nolabel_line335/HS0                  |                1 |              1 |
+|  data0[11]                   |                                      |                                      |                1 |              2 |
+|  se__0[27]                   |                                      |                                      |                2 |              2 |
+|  se__0[28]                   |                                      |                                      |                1 |              2 |
+|  se__0[29]                   |                                      |                                      |                1 |              2 |
+|  data0[10]                   |                                      |                                      |                1 |              2 |
+|  data0[17]                   |                                      |                                      |                1 |              2 |
+|  data0[12]                   |                                      |                                      |                1 |              2 |
+|  data0[13]                   |                                      |                                      |                1 |              2 |
+|  data0[14]                   |                                      |                                      |                1 |              2 |
+|  data0[15]                   |                                      |                                      |                1 |              2 |
+|  data0[16]                   |                                      |                                      |                1 |              2 |
+|  data0[18]                   |                                      |                                      |                1 |              2 |
+|  data0[19]                   |                                      |                                      |                1 |              2 |
+|  data10[30]                  |                                      |                                      |                1 |              2 |
+|  data10[31]                  |                                      |                                      |                1 |              2 |
+|  data10[32]                  |                                      |                                      |                1 |              2 |
+|  data10[33]                  |                                      |                                      |                1 |              2 |
+|  data10[34]                  |                                      |                                      |                1 |              2 |
+|  data10[35]                  |                                      |                                      |                1 |              2 |
+|  data10[36]                  |                                      |                                      |                1 |              2 |
+|  data10[37]                  |                                      |                                      |                1 |              2 |
+|  data10[38]                  |                                      |                                      |                1 |              2 |
+|  data10[39]                  |                                      |                                      |                1 |              2 |
+|  se[0]                       |                                      |                                      |                1 |              2 |
+|  se[1]                       |                                      |                                      |                1 |              2 |
+|  se[2]                       |                                      |                                      |                1 |              2 |
+|  se[3]                       |                                      |                                      |                1 |              2 |
+|  se[4]                       |                                      |                                      |                1 |              2 |
+|  se[5]                       |                                      |                                      |                1 |              2 |
+|  se[6]                       |                                      |                                      |                1 |              2 |
+|  se[7]                       |                                      |                                      |                1 |              2 |
+|  se[8]                       |                                      |                                      |                1 |              2 |
+|  se[9]                       |                                      |                                      |                1 |              2 |
+|  se__0[20]                   |                                      |                                      |                1 |              2 |
+|  se__0[21]                   |                                      |                                      |                1 |              2 |
+|  se__0[22]                   |                                      |                                      |                1 |              2 |
+|  se__0[23]                   |                                      |                                      |                1 |              2 |
+|  se__0[24]                   |                                      |                                      |                1 |              2 |
+|  se__0[25]                   |                                      |                                      |                1 |              2 |
+|  se__0[26]                   |                                      |                                      |                2 |              2 |
+|  slow_clk                    |                                      | bcd[11]_i_1_n_0                      |                2 |              4 |
+|  slow_clk                    | bcd[11]_i_1_n_0                      | bcd[15]_i_2_n_0                      |                1 |              4 |
+|  slow_clk                    | bcd[15]_i_2_n_0                      | bcd1                                 |                1 |              4 |
+|  slow_clk                    | bcd[7]_i_1_n_0                       | bcd[11]_i_1_n_0                      |                1 |              4 |
+|  instance_name/inst/clk_out1 |                                      |                                      |                5 |             10 |
+|  instance_name/inst/clk_out1 |                                      | nolabel_line335/hcounter[10]_i_1_n_0 |                5 |             10 |
+|  instance_name/inst/clk_out1 | nolabel_line335/hcounter[10]_i_1_n_0 | nolabel_line335/vcounter[10]_i_1_n_0 |                6 |             10 |
+|  clk_IBUF_BUFG               |                                      |                                      |                8 |             27 |
++------------------------------+--------------------------------------+--------------------------------------+------------------+----------------+
+
+

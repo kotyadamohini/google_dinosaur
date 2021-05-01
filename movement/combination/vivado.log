@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Fri Feb 14 19:39:25 2020
+# Process ID: 8500
+# Current directory: D:/movement/combination
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent892 D:\movement\combination\combination.xpr
+# Log file: D:/movement/combination/vivado.log
+# Journal file: D:/movement/combination\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/movement/combination/combination.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/vlsilab/Desktop/combination' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/movement/obstacle_2/obstacle_2.srcs/sources_1/new/vga_controller.v', nor could it be found using path 'C:/Users/vlsilab/Desktop/obstacle_2/obstacle_2.srcs/sources_1/new/vga_controller.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 765.836 ; gain = 140.313
+update_compile_order -fileset sources_1

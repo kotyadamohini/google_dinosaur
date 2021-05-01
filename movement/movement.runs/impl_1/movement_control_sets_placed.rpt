@@ -1,0 +1,154 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
+| Date         : Sat Feb 15 18:14:31 2020
+| Host         : DESKTOP-FAGG66O running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file movement_control_sets_placed.rpt
+| Design       : movement
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   101 |
+| Unused register locations in slices containing registers |   656 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             147 |          113 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              20 |            8 |
+| Yes          | No                    | No                     |              24 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              81 |           32 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-------------------------+-------------------------+------------------+----------------+
+|         Clock Signal         |      Enable Signal      |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++------------------------------+-------------------------+-------------------------+------------------+----------------+
+|  se_reg[14]_i_2_n_0          |                         |                         |                1 |              1 |
+|  instance_name/inst/clk_out1 |                         | u1/HS0                  |                1 |              1 |
+|  instance_name/inst/clk_out1 |                         | u1/VS0                  |                1 |              1 |
+|  str[3]                      |                         |                         |                1 |              1 |
+|  str[4]                      |                         |                         |                1 |              1 |
+|  str[5]                      |                         |                         |                1 |              1 |
+|  str[6]                      |                         |                         |                1 |              1 |
+|  str[7]                      |                         |                         |                1 |              1 |
+|  se_reg[10]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[11]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[12]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[13]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[36]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[15]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[16]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[17]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[18]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[19]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[30]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[31]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[32]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[33]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[34]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[35]_i_2_n_0          |                         |                         |                1 |              1 |
+|  str[8]                      |                         |                         |                1 |              1 |
+|  se_reg[37]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[38]_i_2_n_0          |                         |                         |                1 |              1 |
+|  se_reg[39]_i_2_n_0          |                         |                         |                1 |              1 |
+|  str[9]                      |                         |                         |                1 |              1 |
+|  str__0[20]                  |                         |                         |                1 |              1 |
+|  str__0[21]                  |                         |                         |                1 |              1 |
+|  str__0[22]                  |                         |                         |                1 |              1 |
+|  str__0[23]                  |                         |                         |                1 |              1 |
+|  slow_clk2_reg_n_0_BUFG      |                         |                         |                1 |              1 |
+|  str__0[24]                  |                         |                         |                1 |              1 |
+|  str__0[25]                  |                         |                         |                1 |              1 |
+|  str__0[26]                  |                         |                         |                1 |              1 |
+|  str__0[27]                  |                         |                         |                1 |              1 |
+|  str_reg[19]_i_2_n_0         |                         |                         |                1 |              1 |
+|  str__0[28]                  |                         |                         |                1 |              1 |
+|  str__0[29]                  |                         |                         |                1 |              1 |
+|  str_reg[10]_i_2_n_0         |                         |                         |                1 |              1 |
+|  str_reg[11]_i_2_n_0         |                         |                         |                1 |              1 |
+|  str_reg[12]_i_2_n_0         |                         |                         |                1 |              1 |
+|  str_reg[13]_i_2_n_0         |                         |                         |                1 |              1 |
+|  str_reg[14]_i_2_n_0         |                         |                         |                1 |              1 |
+|  str_reg[15]_i_2_n_0         |                         |                         |                1 |              1 |
+|  str_reg[16]_i_2_n_0         |                         |                         |                1 |              1 |
+|  str_reg[17]_i_2_n_0         |                         |                         |                1 |              1 |
+|  str_reg[18]_i_2_n_0         |                         |                         |                1 |              1 |
+|  se[1]                       |                         |                         |                1 |              1 |
+|  data10[30]                  |                         |                         |                1 |              1 |
+|  data10[31]                  |                         |                         |                1 |              1 |
+|  data10[32]                  |                         |                         |                1 |              1 |
+|  data10[33]                  |                         |                         |                1 |              1 |
+|  data10[34]                  |                         |                         |                1 |              1 |
+|  data10[35]                  |                         |                         |                1 |              1 |
+|  data10[36]                  |                         |                         |                1 |              1 |
+|  data10[37]                  |                         |                         |                1 |              1 |
+|  data10[38]                  |                         |                         |                1 |              1 |
+|  data10[39]                  |                         |                         |                1 |              1 |
+|  se[0]                       |                         |                         |                1 |              1 |
+|  se[2]                       |                         |                         |                1 |              1 |
+|  se[3]                       |                         |                         |                1 |              1 |
+|  se[4]                       |                         |                         |                1 |              1 |
+|  se[5]                       |                         |                         |                1 |              1 |
+|  se[6]                       |                         |                         |                1 |              1 |
+|  se[7]                       |                         |                         |                1 |              1 |
+|  se[8]                       |                         |                         |                1 |              1 |
+|  se[9]                       |                         |                         |                1 |              1 |
+|  se__0[20]                   |                         |                         |                1 |              1 |
+|  se__0[21]                   |                         |                         |                1 |              1 |
+|  se__0[22]                   |                         |                         |                1 |              1 |
+|  se__0[23]                   |                         |                         |                1 |              1 |
+|  se__0[24]                   |                         |                         |                1 |              1 |
+|  se__0[25]                   |                         |                         |                1 |              1 |
+|  se__0[26]                   |                         |                         |                1 |              1 |
+|  se__0[27]                   |                         |                         |                1 |              1 |
+|  se__0[28]                   |                         |                         |                1 |              1 |
+|  se__0[29]                   |                         |                         |                1 |              1 |
+|  str[0]                      |                         |                         |                1 |              1 |
+|  str[1]                      |                         |                         |                1 |              1 |
+|  str[2]                      |                         |                         |                1 |              1 |
+|  slow_clk1_BUFG              |                         | bcd[7]_i_1_n_0          |                1 |              4 |
+|  slow_clk1_BUFG              | bcd1                    | bcd[15]_i_1_n_0         |                1 |              4 |
+|  slow_clk1_BUFG              | bcd[11]_i_2_n_0         | bcd[11]_i_1_n_0         |                1 |              4 |
+|  slow_clk1_BUFG              | se[9]                   | bcd[7]_i_1_n_0          |                2 |              4 |
+|  slow_clk2_reg_n_0_BUFG      |                         | u2/x1_reg[7]            |                1 |              4 |
+|  slow_clk_reg_n_0            |                         |                         |                4 |              5 |
+|  clk_IBUF_BUFG               | u2/endbit               |                         |                2 |              8 |
+|  slow_clk_reg_n_0            | x1[10]_i_2_n_0          | u2/cx2_reg[5][0]        |                4 |              8 |
+|  slow_clk2_reg_n_0_BUFG      | x1[10]_i_2_n_0          | u2/SR[0]                |                5 |              9 |
+|  slow_clk2_reg_n_0_BUFG      | x1[10]_i_2_n_0          | u2/x2_reg[5][0]         |                4 |              9 |
+|  instance_name/inst/clk_out1 |                         | u1/hcounter[10]_i_1_n_0 |                4 |             10 |
+|  instance_name/inst/clk_out1 | u1/hcounter[10]_i_1_n_0 | u1/vcounter[10]_i_1_n_0 |                4 |             10 |
+|  clk_IBUF_BUFG               | u2/shreg[10]_i_2_n_0    | u2/endbit               |                2 |             11 |
+|  slow_clk2_reg_n_0_BUFG      | x1[10]_i_2_n_0          | u2/x_reg[0][0]          |                4 |             11 |
+|  slow_clk_reg_n_0            | x1[10]_i_2_n_0          | u2/cx1_reg[0][0]        |                5 |             11 |
+|  slow_clk1_BUFG              | a                       |                         |                4 |             16 |
+|  instance_name/inst/clk_out1 |                         |                         |               16 |             28 |
+|  clk_IBUF_BUFG               |                         |                         |               12 |             33 |
++------------------------------+-------------------------+-------------------------+------------------+----------------+
+
+

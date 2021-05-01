@@ -1,0 +1,100 @@
+/*
+
+Vivado v2016.1 (64-bit)
+SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+Process ID: 8500
+
+Current time: 	2/14/20 7:39:42 PM IST
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.1/tps/win64/jre
+
+User name: 	VLSI
+User home directory: C:/Users/VLSI
+User working directory: D:/movement/combination
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.1/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.1/bin
+
+Vivado preferences path: C:/Users/VLSI/AppData/Roaming/Xilinx/Vivado/2016.1/vivado.ini
+Vivado layouts directory: C:/Users/VLSI/AppData/Roaming/Xilinx/Vivado/2016.1/layouts
+
+GUI allocated memory:	178 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 453 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 57 MB (+57784kb) [00:00:07]
+// [Engine Memory]: 373 MB (+239892kb) [00:00:07]
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: D:\movement\combination\combination.xpr. Version: Vivado v2016.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/movement/combination/combination.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 458 MB (+69030kb) [00:00:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 459 MB. GUI used memory: 30 MB. Current time: 2/14/20 7:39:45 PM IST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 509 MB (+29828kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project D:/movement/combination/combination.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/vlsilab/Desktop/combination' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 553 MB (+19111kb) [00:00:22]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: combination; location: D:/movement/combination; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 765.836 ; gain = 140.313 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 554 MB. GUI used memory: 37 MB. Current time: 2/14/20 7:40:00 PM IST
+// a:a (cv:JFrame): Critical Messages: addNotify
+dismissDialog("Critical Messages"); // a:a (cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, combination (combination.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, combination (combination.v)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// [GUI Memory]: 62 MB (+1248kb) [00:00:52]
+// Elapsed time: 36 seconds
+selectCodeEditor("combination.v", 248, 431); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("combination.v", 252, 439); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 67 MB (+2752kb) [00:01:27]
+// Elapsed time: 19 seconds
+selectCodeEditor("combination.v", 20, 193); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("combination.v", 2, 162); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("combination.v", 228, 346, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+// [GUI Memory]: 72 MB (+1516kb) [00:01:45]
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
